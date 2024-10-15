@@ -70,12 +70,21 @@ body
   list-style: none;
   margin-left: 2px;
 }
+
 .unilist li a
 {
   text-decoration: none;
   font-size: 20px;
   font-weight: 400;
   color: var(--nav-yellowight-color);
+  letter-spacing: 1px;
+}
+.unilist li a:hover
+{
+  text-decoration: none;
+  font-size: 23px;
+  font-weight: 400;
+  color: var(--nav-olivegreen-color);
   letter-spacing: 1px;
 }
 
