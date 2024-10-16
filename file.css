@@ -989,7 +989,6 @@ body
     background-color: #e0e0e0;
     border-radius: 5px;
     overflow: hidden;
-    position: relative;
     height: 17px;
     width: 70%;
   }
@@ -1050,7 +1049,6 @@ body
     background-color: #e0e0e0;
     border-radius: 5px;
     overflow: hidden;
-    position: relative;
     height: 17px;
     width: 70%;
   }
@@ -1128,7 +1126,6 @@ body
     background-color: #e0e0e0;
     border-radius: 5px;
     overflow: hidden;
-    position: relative;
     height: 13px;
     width: 80%;
   }
