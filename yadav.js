@@ -1,9 +1,8 @@
+// ******************************Nav Bar*************************
 let c = 1 ;
 let menuUl = document.querySelector(".unilist");
 let menubtn = document.querySelector(".menu-btn");
 let menui = document.querySelector(".fa-solid");
-
-// ******************************Nav Bar*************************
 menubtn.addEventListener('click', () =>{
     if( c === 1){
         menuUl.classList.remove("removeul");
@@ -20,6 +19,40 @@ menubtn.addEventListener('click', () =>{
         c = 1;
     }
 });
+
+let scrollcont = document.querySelectorAll(".scrollcont");
+let navLinks = document.querySelectorAll(".open");
+let open1 = document.querySelector(".open1");
+let open2 = document.querySelector(".open2");
+let open3 = document.querySelector(".open3");
+let open4 = document.querySelector(".open4");
+let open5 = document.querySelector(".open5");
+
+window.onscroll = () => {
+  scrollcont.forEach(sc => {
+    let top = window.scrollY;
+    navLinks.forEach(links => {
+      links.classList.remove('navActive');
+    });
+    if(top >= 0 && top < 1164){
+      open1.classList.add('navActive');
+    }else if (top >= 1164 && top < 1608)
+    {
+      open2.classList.add('navActive');
+    }else if (top >= 1608 && top < 2074)
+      {
+        open3.classList.add('navActive');
+      }else if (top >= 2074 && top < 2536)
+        {
+          open4.classList.add('navActive');
+        }else
+          {
+            open5.classList.add('navActive');
+          }
+    
+    
+  });
+};
 
 // ***************************Home section********************************
 const selectTyped = document.querySelector('.typed');

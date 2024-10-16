@@ -12,7 +12,7 @@
 <body>
     <header id="header" >
       <div class="container">
-        <a href="pro.html" class="logo">
+        <a href="index.html" class="logo">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.png" alt=""> -->
           <h1 class="sitename">Shubham Yadav</h1>
@@ -22,18 +22,18 @@
         </label>
         <nav id="navmenu">
           <ul class="unilist removeul">
-            <li><a href="#header" class="navactive">Home</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#service">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#homecont" class="open open1 navActive">Home</a></li>
+            <li><a href="#portfolio" class="open open2">Portfolio</a></li>
+            <li><a href="#service" class="open open3 ">Services</a></li>
+            <li><a href="#about" class="open open4">About</a></li>
+            <li><a href="#contact" class="open open5">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
       <!-- *******************Home Container*************************** -->
-    <div class="cont_body">
+    <div class="cont_body scrollcont" id="homecont">
 
 
       <div class="home">
@@ -169,7 +169,7 @@
               </li>
             </ul>
         </section>
-    </div>
+      </div>
 
     <!-- *************Skills container************* -->
     <div class="skills-container">
@@ -200,7 +200,7 @@
       <div class="skill">
         <p>C</p>
         <div class="progress-bar">
-          <div class="progress" data-value="40%"></div>
+          <div class="progress" data-value="45%"></div>
         </div>
       </div>
       
@@ -208,83 +208,83 @@
 
      <!-- *******************Portfolio Section*********************** -->
  
-  <div class="portfolio-container" id="portfolio" >
-    <h1>Portfolio</h1>
-    <p class="subtitle">Most recent work</p>
-    
-    <div class="portfolio-item">
-        <button class="arrow left">&#9664;</button>
-        
-        <div class="portfolio_content1">
-            <div class="portfolio-image">
-                <img src="cameraimg.png" alt="Modern Website">
-            </div>
-            <div class="portfolio-description">
-                <h2>Game</h2>
-                <p>Website adaptable to all devices, with UI components and animated interactions.</p>
-                <a href="#" class="demo-btn">Demo →</a>
-            </div>
+        <div class="portfolio-container scrollcont" id="portfolio" >
+          <h1>Portfolio</h1>
+          <p class="subtitle">Most recent work</p>
+          
+          <div class="portfolio-item">
+              <button class="arrow left">&#9664;</button>
+              
+              <div class="portfolio_content1">
+                  <div class="portfolio-image">
+                      <img src="cameraimg.png" alt="Modern Website">
+                  </div>
+                  <div class="portfolio-description">
+                      <h2>Game</h2>
+                      <p>Website adaptable to all devices, with UI components and animated interactions.</p>
+                      <a href="#" class="demo-btn">Demo →</a>
+                  </div>
+              </div>
+      
+              <div class="portfolio_content2 hidden">
+                  <div class="portfolio-image">
+                      <img src="webapp.png" alt="Modern Website">
+                  </div>
+                  <div class="portfolio-description">
+                      <h2>Modern Website</h2>
+                      <p>Website adaptable to all devices, with UI components and animated interactions.</p>
+                      <a href="#" class="demo-btn">Demo →</a>
+                  </div>
+              </div>
+
+              <button class="arrow right">
+                &#9654;
+              </button>
+          </div>
+
+              <div class="dots">
+                <span class="dot"></span>
+                <span class="dot active"></span>
+              </div>
         </div>
-
-        <div class="portfolio_content2 hidden">
-            <div class="portfolio-image">
-                <img src="webapp.png" alt="Modern Website">
-            </div>
-            <div class="portfolio-description">
-                <h2>Modern Website</h2>
-                <p>Website adaptable to all devices, with UI components and animated interactions.</p>
-                <a href="#" class="demo-btn">Demo →</a>
-            </div>
-            
-        </div>
-
-
-        <button class="arrow right">&#9654;</button>
-    </div>
-    
-    <div class="dots">
-      <span class="dot"></span>
-      <span class="dot active"></span>
-    </div>
-</div>
 
 
               <!-- *************Service container************* -->
-<section id="service" class="services">
-  <p>MY <span>Services</span></p>
-  <h2 class="services-title">What I Do</h2>
-  <div class="services-container">
-      <div class="service-card">
-          <div class="icon">
-              <!-- Replace with actual SVG or image -->
-              <i class="fa-solid fa-code" alt="Web Developer"></i>
-              <!-- <img src="webdevolper.jpeg" alt="Web Developer"> -->
-          </div>
-          <h3>Frontend Developer</h3>
-          <p>Development of custom web pages. Using current technologies and libraries of the labor field.</p>
-      </div>
-
-      <div class="service-card">
-          <div class="icon">
-            <i class="fa-solid fa-swatchbook" alt="UI/UX Designer"></i>
-          </div>
-          <h3>UI/UX Designer</h3>
-          <p>Working with designers to apply user-oriented designs and improving the situation in terms of user’s perspective on the company’s website.</p>
-      </div>
-
-      <div class="service-card">
-          <div class="icon">
-            <i class="fa-solid fa-pen-nib" alt="Graphic Designer"></i>
-          </div>
-          <h3>SPA</h3>
-          <p>Single Page Application (SPA) Development :- Developing strong web interfaces where the whole application is located on one page, which makes the work in the application faster and more convenient.</p>
-      </div>
-  </div>
-</section>
+         <section id="service" class="services scrollcont">
+           <p>MY <span>Services</span></p>
+           <h2 class="services-title">What I Do</h2>
+           <div class="services-container">
+               <div class="service-card">
+                   <div class="icon">
+                       <!-- Replace with actual SVG or image -->
+                       <i class="fa-solid fa-code" alt="Web Developer"></i>
+                       <!-- <img src="webdevolper.jpeg" alt="Web Developer"> -->
+                   </div>
+                   <h3>Frontend Developer</h3>
+                   <p>Development of custom web pages. Using current technologies and libraries of the labor field.</p>
+               </div>
+         
+               <div class="service-card">
+                   <div class="icon">
+                     <i class="fa-solid fa-swatchbook" alt="UI/UX Designer"></i>
+                   </div>
+                   <h3>UI/UX Designer</h3>
+                   <p>Working with designers to apply user-oriented designs and improving the situation in terms of user’s perspective on the company’s website.</p>
+               </div>
+         
+               <div class="service-card">
+                   <div class="icon">
+                     <i class="fa-solid fa-pen-nib" alt="Graphic Designer"></i>
+                   </div>
+                   <h3>SPA</h3>
+                   <p>Single Page Application (SPA) Development :- Developing strong web interfaces where the whole application is located on one page, which makes the work in the application faster and more convenient.</p>
+               </div>
+           </div>
+         </section>
    
       
     <!-- *************About me************* -->
-    <section id="about" class="about">
+    <section id="about" class="about scrollcont">
       <div class="about-container">
       <h2>About Me</h2>
       <p class="subtitle">My introduction</p>
@@ -322,7 +322,7 @@
 
     <!-- <-.................Hire me.................................-> -->
            
-      <div id="contact" class="hireme-dark">
+      <div id="contact" class="hireme-dark scrollcont">
         <div class="hiremecontainer">
           <div class="animate-hiremebox">
             <div class="hireme-heading">
